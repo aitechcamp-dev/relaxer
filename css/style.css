@@ -3,6 +3,11 @@ body{
 }
 ul{
     list-style: none;
+    padding: 0;
+}
+button{
+    background: none;
+    border: 0;
 }
 
 /* ナビゲーション */
@@ -71,11 +76,11 @@ header{
 
 main{
     background: url(../images/stripe.png);
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 .main-title{
     text-align: center;
-    padding: 2rem 0;
+    padding: 65px 0;
 }
 .main-title h2{
     color: #fff;
@@ -92,15 +97,65 @@ main{
 .main-subtitle{
     background-color: #A71063;
     color: #fff;
-    padding: 0.5rem 2rem;
-}
-.campaign-innerbox{
-    background-color: #fff;
-    margin: 0 2rem;
-    padding: 1rem 1rem;
-}
-.campaign-fee{
     padding: 1rem 2rem;
 }
+.main-subtitle h3{
+    font-size: 36px;
+    font-weight: 500;
+}
 
+.main-subtitle h4{
+    font-size: 28px;
+    font-weight:400;
+}
 
+.campaign-innerbox{
+    background-color: #fff;
+    margin: 30px 2rem 0 2rem;
+    padding: 1rem 1rem;
+}
+.campaign-innerbox ul{
+    padding: 30px 70px;
+    margin: 0;
+}
+
+.campaign-fee{
+    padding: 1rem 70px;
+}
+#photo-area{
+    padding-top: 50px;
+    height: 350px;
+    background: url(../images/studio_photo3.png)no-repeat center;
+    background-size: cover;
+}
+
+/* 入会エリア */
+#entry-area{
+    height: 630px;
+    background: url(../images/footer-back.jpg) no-repeat bottom center;
+    background-size: cover;
+}
+.entry-box{
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.entry-box button{
+    margin-top: 50px;
+}
+
+/* joinエリア */
+#joinus{
+    background-color: #F4F5EF;
+}
+.join-box{
+    background: url(../images/woman-relax.png) no-repeat center center;
+    background-size: contain;
+}
+.join-box h2{
+    font-family: 'Courgette', cursive;
+    font-size: 80px;
+    text-align: center;
+}

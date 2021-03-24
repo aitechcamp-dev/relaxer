@@ -9,6 +9,18 @@ button{
     background: none;
     border: 0;
 }
+.sp{
+    display: none;
+}
+
+@media screen and (max-width:992px){
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+}
 
 /* ナビゲーション */
 nav{
@@ -128,6 +140,23 @@ main{
     background: url(../images/studio_photo3.png)no-repeat center;
     background-size: cover;
 }
+@media screen and (max-width:992px){
+    .campaign-innerbox ul {
+        padding: 10px 0px;
+    }
+    .main-box{
+        padding:0;
+    }
+    .campaign-fee {
+        padding: 1rem;
+    }
+    #photo-area{
+        padding-top: 0px;
+        height: 300px;
+        background: url(../images/studio_photo3-sp.png)no-repeat bottom center;
+        background-size: contain;
+    }
+}
 
 /* 入会エリア */
 #entry-area{
@@ -150,12 +179,82 @@ main{
 #joinus{
     background-color: #F4F5EF;
 }
+.join-title{
+    background-color: #6287AD;
+    text-align: center;
+    padding: 1rem 0;
+}
+.join-title h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-title{
+    font-size: 21px;
+}
+
+
 .join-box{
     background: url(../images/woman-relax.png) no-repeat center center;
     background-size: contain;
+    padding: 2rem 0;
 }
 .join-box h2{
     font-family: 'Courgette', cursive;
     font-size: 80px;
     text-align: center;
+}
+.join-area{
+    /* padding-top: 3rem; */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.join-right{
+    order: 1;
+}
+.join-left{
+    order: 0;
+}
+.join-left h3{
+    font-size: 32px;
+    color: #B51E23;
+}
+.join-left button{
+    font-size: 24px;
+    color: #fff;
+    background-color: #B51E23;
+    padding: 0.7rem 1rem;
+}
+.join-left i{
+    font-size: 18px;
+    margin-left: 0.5rem;
+}
+@media screen and (max-width:992px){
+    .join-right{
+        order: 0;
+        text-align: center;
+    }
+    .join-left{
+        order: 1;
+        text-align: center;
+    }
+    .join-left h3,
+    .join-left p{
+        text-align: left;
+    }
+    .join-title h1{
+        flex-direction:column;
+    }
+    .join-box{
+        background: none;
+    }
+    .join-area{
+        height: auto;
+    }
 }
